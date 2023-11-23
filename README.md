@@ -7,3 +7,7 @@ kubectl -n elastic-system logs -f statefulset.apps/elastic-operator
 
 所有的資源都在namespace: kube-system下
 除了產生log的pod test.yaml
+
+
+kubectl port-forward service/quickstart-kb-http 5601
+將流量導到https://localhsot:5601
